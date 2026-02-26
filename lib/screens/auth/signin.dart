@@ -23,36 +23,13 @@ class Signin extends StatelessWidget {
                   prefixIcon: Icon(Icons.email, color: Colors.blue.shade900,),
                   border: InputBorder.none,
                   hintText: "Email",
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade900,
-                      width: 0.7
-                    )
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade900,
-                      width: 0.7
-                    )
-                  ),
                 ),
               ),
               TextField(
                 decoration: InputDecoration(
                   prefixIcon: Icon(Icons.password, color: Colors.blue.shade600,),
                   border: InputBorder.none,
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade900,
-                      width: 0.7,
-                    )
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.blue.shade900,
-                      width: 0.7
-                    )
-                  )
+                  
                 ),
               )
           ],

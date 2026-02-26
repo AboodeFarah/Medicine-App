@@ -11,6 +11,23 @@ class MedicineApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      theme: ThemeData(
+        inputDecorationTheme: InputDecorationTheme(
+          border: InputBorder.none,
+          focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue.shade900,
+                      width: 0.7
+                    )
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue.shade900,
+                      width: 0.7
+                    )
+                  ),
+        )
+      ),
       home: Signin() ,
     ); 
 
