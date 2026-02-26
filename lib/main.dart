@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medicineapp/screens/auth/signin.dart';
+import 'package:medicineapp/screens/auth/signup.dart';
 
 void main() {
   runApp(const MedicineApp());
