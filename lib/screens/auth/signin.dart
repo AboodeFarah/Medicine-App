@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:medicineapp/screens/auth/signup.dart';
 
 class Signin extends StatefulWidget {
   const Signin({super.key});
@@ -95,7 +97,10 @@ class _SigninState extends State<Signin> {
                   children: [
                     TextSpan(
                       style: TextStyle(color: Colors.blue.shade600,fontSize: 18),
-                      text: "sign up"
+                      text: "sign up",
+                      recognizer: TapGestureRecognizer()..onTap = (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> signup()));
+                      },
                     )
                   ]
                 ))
